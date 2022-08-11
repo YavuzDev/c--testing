@@ -4,10 +4,10 @@ int main() {
     auto tests = TestManager();
 
     tests.group("Test failures and successes", {
-            {"This test will fail",   [](Assert &assert) {
+            {"This test will fail", [](Assert &assert) {
                 assert.equals(1, 2);
             }},
-            {"This test will pass",   [](Assert &assert) {
+            {"This test will pass", [](Assert &assert) {
                 assert.equals(1, 1);
             }},
     });
@@ -37,7 +37,7 @@ int main() {
     });
 
     tests.group("Test isLowerThan and isGreaterThan functions", {
-            {"Test 4 is lower than 20", [](Assert &assert) {
+            {"Test 4 is lower than 20",   [](Assert &assert) {
                 assert.isLowerThan(4, 20);
             }},
             {"Test 20 is greater than 4", [](Assert &assert) {

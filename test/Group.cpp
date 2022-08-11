@@ -32,11 +32,7 @@ void Group::printResults(std::ostream &stream) {
         }
     }
 
-    const auto passedTests = std::count_if(this->results.begin(), this->results.end(), [](const auto &result) {
-        return !result.second->isError();
-    });
-
-    stream << "\nGroup: " << this->name << ", results: passed " << passedTests << "/"
+    stream << "\nGroup: " << this->name << ", results: passed " << this->passed << "/"
            << this->tests.size() << "\n\n";
 }
 
