@@ -60,7 +60,7 @@ int main() {
 It is also possible to output the results to a file by using 
 
 ```c++
-    tests.run(TestManager::TestResultOutput::PRINT);
+    tests.run(TestManager::TestResultOutput::FILE);
 ```
 
 ## Output
